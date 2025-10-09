@@ -1,5 +1,5 @@
 # Continuous-Time-Transformer-For-Channel-Prediction
-The pytorch implementation of our paper “Continuous-Time Transformer Based Channel Prediction with Non-Uniform Pilot Pattern” will be made publicly available shortly.
+The pytorch implementation of our paper “Continuous-Time Transformer Based Channel Prediction with Non-Uniform Pilot Pattern”.
 
 **Note:** For protection purposes, we do not provide runnable code files at this stage. Upon major acceptance of our paper, we will promptly release the full runnable code to facilitate reproducibility.
 
