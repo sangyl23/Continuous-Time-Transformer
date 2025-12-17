@@ -5,9 +5,6 @@ The pytorch implementation of our paper “Continuous-Time Transformer Based Cha
 <img align="middle" src="./pictures/Fig4.png" width="800"  />
 </p>
 
-## Checkpoint and data set download
-Please download checkpoint (.pth format) and data set (.mat format) from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in the corresponding `./checkpoint`, `./3GPP_dataset`, `./deepmimo_dataset`, `./demo_dataset` folders.  
-
 ## File Description
  - `./3GPP_dataset` containing test dataset of 3GPP TR 38.901 channels.
  - `./deepmimo_dataset` containing test dataset of DeepMIMO channels.
@@ -34,6 +31,7 @@ In our code, we have provided detailed annotations. Below are the specific meani
 
 ## Reproduce the experimental result
 ***Note: In the following, let us use `your_path` to denote the directory where our project is located on your computer.***
+To get started, please download `./checkpoint`, `./3GPP_dataset`, and `./deepmimo_dataset` folders from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in `your_path`.
 
 * For Table IV in the original paper, please run the following commands step by step in your terminal. Moreover, we provide NMSE performance with prediction time slots under different encoding configurations.
 
