@@ -32,9 +32,5 @@ In our code, we have provided detailed annotations. Below are the specific meani
  - `pre_len` prediction sequence length.
  - `label_len` label length for transformer decoder.
 
-
-## Keyword arguments within runnable code files
-...
-
 ## Reproduce the experimental result
 ...
