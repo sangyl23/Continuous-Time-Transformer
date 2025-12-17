@@ -5,6 +5,19 @@ The pytorch implementation of our paper “Continuous-Time Transformer Based Cha
 <img align="middle" src="./pictures/Fig4.png" width="800"  />
 </p>
 
+## Prerequisites
+Install `torchdiffeq` from https://github.com/rtqichen/torchdiffeq.
+
+To install latest stable version:
+```
+pip install torchdiffeq
+```
+
+To install latest on GitHub:
+```
+pip install git+https://github.com/rtqichen/torchdiffeq
+```
+
 ## File Description
  - `./3GPP_dataset` containing test dataset of 3GPP TR 38.901 channels.
  - `./deepmimo_dataset` containing test dataset of DeepMIMO channels.
