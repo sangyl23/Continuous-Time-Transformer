@@ -33,10 +33,17 @@ In our code, we have provided detailed annotations. Below are the specific meani
  - `label_len` label length for transformer decoder.
 
 ## Reproduce the experimental result
-In the following, let us use `your_path` to denote the directory where our project is located on your computer – explanatory, beginner‑friendly.
+In the following, let us use `your_path` to denote the directory where our project is located on your computer.
 
-* For Table IV in the original paper, please run
+* For Table IV in the original paper, please run the following commands step by step in your terminal
 
 ```
-python eval_MTL.py --experiment_type O1_trainingsamples
+cd your_path/eval_code/TabIV_attention_omega0_encoding
+python eval_ODE.py --time_emb_kind HFTE --omega_0 30 --dec_ctsa False --result_idx r1
+python eval_ODE.py --time_emb_kind without --result_idx r2
+python eval_ODE.py --time_emb_kind PE --result_idx r3
+python eval_ODE.py --time_emb_kind HFTE --omega_0 1 --result_idx r4
+python eval_ODE.py --time_emb_kind HFTE --omega_0 10 --result_idx r5
+python eval_ODE.py --time_emb_kind HFTE --omega_0 30 --result_idx r6
+python eval_ODE.py --time_emb_kind HFTE --omega_0 50 --result_idx r7
 ```
