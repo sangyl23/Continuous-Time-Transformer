@@ -29,6 +29,19 @@ In our code, we have provided detailed annotations. Below are the specific meani
  - `pre_len` prediction sequence length.
  - `label_len` label length for transformer decoder.
 
+
+## How to train continuous-time transformer
+***Note: In the following, let us use `your_path` to denote the directory where our project is located on your computer.***
+
+To get started, please download `demo_dataset` folders from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in `your_path`.
+
+* If you want to train continuous-time transformer, please run the following commands step by step in your terminal.
+
+```
+cd your_path/train_code
+python eval_ODE.py --model_name CT_Transformer
+```
+
 ## Reproduce the experimental result
 ***Note: In the following, let us use `your_path` to denote the directory where our project is located on your computer.***
 
@@ -226,6 +239,4 @@ python eval_ODE.py --model_name Latent_ODE --snr 15dB --result_idx r4
 python eval_ODE.py --model_name CT_Transformer --snr 15dB --result_idx r5
 ```
 
-The results are saved to `.mat` files, and you can run `print_results_Fig9.m` to print results. 
-
-## How to train continuous-time transformer
+The results are saved to `.mat` files, and you can run `print_results_Fig9.m` to print results.
