@@ -13,6 +13,7 @@ Please download checkpoint (.pth format) and test data set (.mat format) from Ts
  - `./deepmimo_dataset` containing test dataset of DeepMIMO channels.
  - `./checkpoint` containing all trained models.
  - `./eval_code` containing all runnable codes for vadidating the simulation results in the original paper.
+
 Taking the folder `./eval_code/TabIV_attention_omega0_encoding/` as an example, we provide a detailed overview of the code structure and functionality below:
  - `./3GPP_dataset` containing test dataset of 3GPP TR 38.901 channels.
  - `./deepmimo_dataset` containing test dataset of DeepMIMO channels.
