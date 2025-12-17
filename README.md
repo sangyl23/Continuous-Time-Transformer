@@ -12,13 +12,17 @@ Please download checkpoint (.pth format) and test data set (.mat format) from Ts
  - `./3GPP_dataset` containing test dataset of 3GPP TR 38.901 channels.
  - `./deepmimo_dataset` containing test dataset of DeepMIMO channels.
  - `./checkpoint` containing all trained models.
- - `./eval_code` containing all runnable codes for vadidating the simulation results in the original paper.
+ - `./eval_code` containing all runnable codes for validating the simulation results in the original paper.
 
 Taking the folder `./eval_code/TabIV_attention_omega0_encoding/` as an example, we provide a detailed overview of the code structure and functionality below:
- - `./3GPP_dataset` containing test dataset of 3GPP TR 38.901 channels.
- - `./deepmimo_dataset` containing test dataset of DeepMIMO channels.
- - `./checkpoint` containing all trained models.
- - `./eval_code` containing all runnable codes for vadidating the simulation results in the original paper.
+ - `./eval_code/TabIV_attention_omega0_encoding/dataloader_ODE.py`: dataset loading file.
+ - `./eval_code/TabIV_attention_omega0_encoding/model_ODE.py`: model definition file.
+ - `./eval_code/TabIV_attention_omega0_encoding/utils.py`: utility file.
+ - `./eval_code/TabIV_attention_omega0_encoding/models/`: folder containing detailed model structure definitions.
+ - `./eval_code/TabIV_attention_omega0_encoding/configs/`: folder containing parameter configuration.
+ - `./eval_code/TabIV_attention_omega0_encoding/eval_ODE.py`: main file for validation.
+ - `./eval_code/TabIV_attention_omega0_encoding/cmd_code.txt`: terminal commands.
+ - `./eval_code/TabIV_attention_omega0_encoding/print_results_TabIV.m`: MATLAB code for displaying results.
 
 ## Keyword arguments
 In our code, we have provided detailed annotations. Below are the specific meanings of some keywords:
