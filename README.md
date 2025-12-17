@@ -167,4 +167,4 @@ python eval_ODE.py --model_name CT_Transformer --UE_velocity 60kmh --intepolate_
 python eval_ODE.py --model_name CT_Transformer --UE_velocity 80kmh --intepolate_pilot_method chebyshev --result_idx r40
 ```
 
-The results are saved to `.mat` files, and you can run `print_results_TabVII.m` to print results. 
+The results are saved to `.mat` files, and you can run `print_results_Fig67.m` to print results. 
