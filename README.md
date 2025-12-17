@@ -185,3 +185,20 @@ python eval_ODE.py --time_emb_kind PE --batch_size 2 --pre_len 200 --result_idx 
 ```
 
 The results are saved to `.mat` files, and you can run `visualization_differenrmodels.m` to print results. 
+
+* For Figure 9 in the original paper, please run the following commands step by step in your terminal
+
+<p align="center">
+<img align="middle" src="./pictures/Fig8.png" width="800"  />
+</p>
+
+```
+cd your_path/eval_code/Fig8_visualization
+python eval_ODE.py --model_name Neural_ODE --batch_size 2 --pre_len 200 --result_idx r1
+python eval_ODE.py --model_name Latent_ODE --batch_size 2 --pre_len 200 --result_idx r2
+python eval_ODE.py --model_name CT_Transformer --batch_size 2 --pre_len 200 --result_idx r3
+python eval_ODE.py --time_emb_kind without --batch_size 2 --pre_len 200 --result_idx r4
+python eval_ODE.py --time_emb_kind PE --batch_size 2 --pre_len 200 --result_idx r5
+```
+
+The results are saved to `.mat` files, and you can run `visualization_differenrmodels.m` to print results. 
