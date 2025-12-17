@@ -15,11 +15,12 @@ Please download checkpoint (.pth format) and test data set (.mat format) from Ts
  - `./eval_code` containing all runnable codes for vadidating the simulation results in the original paper.
 
 ## Keyword arguments
-In our code, we have provided detailed comments. Below are the specific meanings of some keywords:
+In our code, we have provided detailed annotations. Below are the specific meanings of some keywords:
  - `b` batch size.
- - `his_len` historical sequence length.
- - `BS_num` BS number.
- - `beam_num` beam number.
+ - `M` BS antenna number.
+ - `his_len` estimation sequence length.
+ - `pre_len` prediction sequence length.
+ - `label_len` label length for transformer decoder.
 
 
 ## Keyword arguments within runnable code files
