@@ -8,7 +8,9 @@ The pytorch implementation of our paper “Continuous-Time Transformer Based Cha
 ## File Description
  - `./3GPP_dataset` containing test dataset of 3GPP TR 38.901 channels.
  - `./deepmimo_dataset` containing test dataset of DeepMIMO channels.
+ - `./demo_dataset` a small dataset for quick start.
  - `./checkpoint` containing all trained models.
+ - `./train_code` containing runnable codes for training continuous-time transformer and all benchmarks (latent ode, neural ode, vanilla transformer, gru).
  - `./eval_code` containing all runnable codes for validating the simulation results in the original paper.
 
 Taking the folder `./eval_code/TabIV_attention_omega0_encoding/` as an example (other folders are similar), a detailed overview of the code structure and functionality is shown as below:
@@ -33,7 +35,7 @@ In our code, we have provided detailed annotations. Below are the specific meani
 ## How to train continuous-time transformer
 ***Note: In the following, let us use `your_path` to denote the directory where our project is located on your computer.***
 
-***Note: Since the training dataset is massive, and can not be fully uploaded to Cloud, a simplified demo is provided here to demonstrate how the code runs and to support migration into your project.***
+***Note: Since the training dataset is massive, and can not be fully uploaded to Cloud, a simplified demo is provided here to illustrate the code workflow and to support migration into your project.***
 
 To get started, please download `demo_dataset` folders from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in `your_path`.
 
