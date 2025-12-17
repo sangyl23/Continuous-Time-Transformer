@@ -31,7 +31,8 @@ In our code, we have provided detailed annotations. Below are the specific meani
 
 ## Reproduce the experimental result
 ***Note: In the following, let us use `your_path` to denote the directory where our project is located on your computer.***
-To get started, please download `./checkpoint`, `./3GPP_dataset`, and `./deepmimo_dataset` folders from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in `your_path`.
+
+To get started, please download `checkpoint`, `3GPP_dataset`, and `deepmimo_dataset` folders from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in `your_path`.
 
 * For Table IV in the original paper, please run the following commands step by step in your terminal. Moreover, we provide NMSE performance with prediction time slots under different encoding configurations.
 
