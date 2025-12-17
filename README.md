@@ -116,11 +116,11 @@ The results are saved to `.mat` files, and you can run `print_results_TabVII.m` 
 * For Figure 6 and Figure 7 in the original paper, please run the following commands step by step in your terminal
 
 <p align="center">
-<img align="middle" src="./pictures/Fig6.png" width="400"  />
+<img align="middle" src="./pictures/Fig6.png" width="800"  />
 </p>
 
 <p align="center">
-<img align="middle" src="./pictures/Fig7.png" width="400"  />
+<img align="middle" src="./pictures/Fig7.png" width="800"  />
 </p>
 
 ```
