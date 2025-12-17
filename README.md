@@ -2,7 +2,7 @@
 The pytorch implementation of our paper “Continuous-Time Transformer Based Channel Prediction with Non-Uniform Pilot Pattern”.
 
 ## Checkpoint and test data set download
-Please download checkpoint (.pth format) and test data set (.mat format) from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in the corresponding `./checkpoint`, `./3GPP_dataset`, and `deepmimo_dataset` folders.  
+Please download checkpoint (.pth format) and test data set (.mat format) from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in the corresponding `./checkpoint`, `./3GPP_dataset`, and `./deepmimo_dataset` folders.  
 
 ## File Description
  - `./3GPP_dataset` containing test dataset of 3GPP TR 38.901 channels.
