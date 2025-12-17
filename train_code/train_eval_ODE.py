@@ -410,8 +410,8 @@ def main(training_time = args.training_time, epoch_num = args.epoch_num, b = arg
         path_eval = '../../../../../../data_generation/deepmimo/preprocessed_csi_prediction_dataset/test_opt1_10mats'
     
     elif args.channel_type == 'demo':
-        path_train = 'demo_dataset'
-        path_eval = 'demo_dataset'
+        path_train = '../demo_dataset'
+        path_eval = '../demo_dataset'
     
     else:
         raise NotImplementedError
