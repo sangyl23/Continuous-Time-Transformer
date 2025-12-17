@@ -33,7 +33,7 @@ In our code, we have provided detailed annotations. Below are the specific meani
  - `label_len` label length for transformer decoder.
 
 ## Reproduce the experimental result
-In the following, let us use `your_path` to denote the directory where our project is located on your computer.
+***Note: In the following, let us use `your_path` to denote the directory where our project is located on your computer.***
 
 * For Table IV in the original paper, please run the following commands step by step in your terminal
 
