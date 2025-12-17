@@ -35,10 +35,13 @@ In our code, we have provided detailed annotations. Below are the specific meani
 ## Reproduce the experimental result
 ***Note: In the following, let us use `your_path` to denote the directory where our project is located on your computer.***
 
-* For Table IV in the original paper, please run the following commands step by step in your terminal
+* For Table IV in the original paper, please run the following commands step by step in your terminal. Moreover, we provide NMSE performance with prediction time slots under different encoding configurations.
 
 <p align="center">
 <img align="middle" src="./pictures/TableIV.png" width="400"  />
+</p>
+<p align="center">
+<img align="middle" src="./pictures/FigR1.png" width="500"  />
 </p>
 
 ```
@@ -118,7 +121,6 @@ The results are saved to `.mat` files, and you can run `print_results_TabVII.m` 
 <p align="center">
 <img align="middle" src="./pictures/Fig6.png" width="800"  />
 </p>
-
 <p align="center">
 <img align="middle" src="./pictures/Fig7.png" width="800"  />
 </p>
