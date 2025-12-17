@@ -37,7 +37,7 @@ In our code, we have provided detailed annotations. Below are the specific meani
 
 ***Note: Since the training dataset is massive, and can not be fully uploaded to Cloud, a simplified demo is provided here to illustrate the code workflow and to support migration into your project.***
 
-To get started, please download `demo_dataset` folders from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in `your_path`.
+To get started, please download `demo_dataset.zip` from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in `your_path`.
 
 * If you want to train continuous-time transformer, please run the following commands step by step in your terminal.
 
@@ -77,7 +77,7 @@ python eval_ODE.py --model_name Vanilla_GRU
 ## Reproduce the experimental result
 ***Note: In the following, let us use `your_path` to denote the directory where our project is located on your computer.***
 
-To get started, please download `checkpoint`, `3GPP_dataset`, and `deepmimo_dataset` folders from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in `your_path`.
+To get started, please download `checkpoint.zip`, `3GPP_dataset.zip`, and `deepmimo_dataset.zip` from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in `your_path`.
 
 * For Table IV in the original paper, please run the following commands step by step in your terminal. Moreover, we provide NMSE performance with prediction time slots under different encoding configurations.
 
