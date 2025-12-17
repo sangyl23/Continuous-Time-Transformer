@@ -14,7 +14,7 @@ Please download checkpoint (.pth format) and test data set (.mat format) from Ts
  - `./checkpoint` containing all trained models.
  - `./eval_code` containing all runnable codes for validating the simulation results in the original paper.
 
-Taking the folder `./eval_code/TabIV_attention_omega0_encoding/` as an example, we provide a detailed overview of the code structure and functionality below:
+Taking the folder `./eval_code/TabIV_attention_omega0_encoding/` as an example (other folders are similar), a detailed overview of the code structure and functionality is shown as below:
  - `./eval_code/TabIV_attention_omega0_encoding/dataloader_ODE.py`: dataset loading file.
  - `./eval_code/TabIV_attention_omega0_encoding/model_ODE.py`: model definition file.
  - `./eval_code/TabIV_attention_omega0_encoding/utils.py`: utility file.
