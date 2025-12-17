@@ -169,10 +169,19 @@ python eval_ODE.py --model_name CT_Transformer --UE_velocity 80kmh --intepolate_
 
 The results are saved to `.mat` files, and you can run `print_results_Fig67.m` to print results. 
 
-* For Figure 8 in the original paper, please run the following commands step by step in your terminal
+* For Figure 8 in the original paper, please run the following commands step by step in your terminal. Moreover, additional samples are provided for reference.
 
 <p align="center">
 <img align="middle" src="./pictures/Fig8.png" width="800"  />
+</p>
+<p align="center">
+<img align="middle" src="./pictures/Fig8_R2.png" width="800"  />
+</p>
+<p align="center">
+<img align="middle" src="./pictures/Fig8_R3.png" width="800"  />
+</p>
+<p align="center">
+<img align="middle" src="./pictures/Fig8_R4.png" width="800"  />
 </p>
 
 ```
