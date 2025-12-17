@@ -32,10 +32,9 @@ In our code, we have provided detailed annotations. Below are the specific meani
 
 ## How to train continuous-time transformer
 ***Note: In the following, let us use `your_path` to denote the directory where our project is located on your computer.***
+***Note: Since the training dataset is massive, and can not be fully uploaded to Cloud, a simplified demo is provided here to demonstrate how the code runs and to support migration into your project.***
 
 To get started, please download `demo_dataset` folders from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in `your_path`.
-
-**Please note: Since the training dataset is massive, and can not be fully uploaded to Cloud, a simplified demo is provided to demonstrate how the code runs and to support migration into your project.**
 
 * If you want to train continuous-time transformer, please run the following commands step by step in your terminal.
 
