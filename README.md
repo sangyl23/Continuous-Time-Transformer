@@ -2,7 +2,7 @@
 The pytorch implementation of our paper “Continuous-Time Transformer Based Channel Prediction with Non-Uniform Pilot Pattern”.
 
 <p align="center">
-<img align="middle" src="./pictures/Fig4.png" alt="Cosine similarity between multi-task gradients" width="500"  />
+<img align="middle" src="./pictures/Fig4.png" width="1000"  />
 </p>
 
 ## Checkpoint and test data set download
