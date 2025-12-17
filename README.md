@@ -47,3 +47,5 @@ python eval_ODE.py --time_emb_kind HFTE --omega_0 10 --result_idx r5
 python eval_ODE.py --time_emb_kind HFTE --omega_0 30 --result_idx r6
 python eval_ODE.py --time_emb_kind HFTE --omega_0 50 --result_idx r7
 ```
+
+The results are saved to `.mat` files, and you can run `print_results_TabIV.m` to print results. 
