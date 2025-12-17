@@ -37,6 +37,10 @@ In the following, let us use `your_path` to denote the directory where our proje
 
 * For Table IV in the original paper, please run the following commands step by step in your terminal
 
+<p align="center">
+<img align="middle" src="./pictures/TableIV.png" width="400"  />
+</p>
+
 ```
 cd your_path/eval_code/TabIV_attention_omega0_encoding
 python eval_ODE.py --time_emb_kind HFTE --omega_0 30 --dec_ctsa False --result_idx r1
