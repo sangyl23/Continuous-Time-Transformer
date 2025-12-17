@@ -228,3 +228,5 @@ python eval_ODE.py --model_name CT_Transformer --snr 15dB --result_idx r5
 ```
 
 The results are saved to `.mat` files, and you can run `print_results_Fig9.m` to print results. 
+
+## How to train continuous-time transformer
