@@ -75,17 +75,21 @@ The results are saved to `.mat` files, and you can run `print_results_TabV.m` to
 * For Table VI in the original paper, please run the following commands step by step in your terminal
 
 <p align="center">
-<img align="middle" src="./pictures/TableV.png" width="400"  />
+<img align="middle" src="./pictures/TableVI.png" width="400"  />
 </p>
 
 ```
-cd your_path/eval_code/TabV_architectural_variants
-python eval_ODE.py --model_name CT_Transformer --continuous_qkv_method interp interp interp --result_idx r1
-python eval_ODE.py --model_name CT_Transformer --continuous_qkv_method interp interp ode --result_idx r2
-python eval_ODE.py --model_name CT_Transformer --continuous_qkv_method ode ode ode --result_idx r3
-python eval_ODE.py --model_name CT_Transformer --continuous_qkv_method interp interp ode --ct_attn ct_prob --result_idx r4
-python eval_ODE.py --model_name CT_Transformer_encoderonly_v0 --result_idx r5
-python eval_ODE.py --model_name CT_Transformer --enc_ctsa True --result_idx r6
+cd your_path/eval_code/TabVI_vector_element
+python eval_ODE.py --model_name Vanilla_GRU --input_mechanism Channel_mixing --result_idx r1
+python eval_ODE.py --model_name Vanilla_GRU --input_mechanism Channel_independent --result_idx r2
+python eval_ODE.py --model_name Vanilla_Transformer --input_mechanism Channel_mixing --result_idx r3
+python eval_ODE.py --model_name Vanilla_Transformer --input_mechanism Channel_independent --result_idx r4
+python eval_ODE.py --model_name Neural_ODE --input_mechanism Channel_mixing --result_idx r5
+python eval_ODE.py --model_name Neural_ODE --input_mechanism Channel_independent --result_idx r6
+python eval_ODE.py --model_name Latent_ODE --input_mechanism Channel_mixing --result_idx r7
+python eval_ODE.py --model_name Latent_ODE --input_mechanism Channel_independent --result_idx r8
+python eval_ODE.py --model_name CT_Transformer --input_mechanism Channel_mixing --result_idx r9
+python eval_ODE.py --model_name CT_Transformer --input_mechanism Channel_independent --result_idx r10
 ```
 
-The results are saved to `.mat` files, and you can run `print_results_TabV.m` to print results. 
+The results are saved to `.mat` files, and you can run `print_results_TabVI.m` to print results. 
