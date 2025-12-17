@@ -189,7 +189,7 @@ The results are saved to `.mat` files, and you can run `visualization_differenrm
 * For Figure 9 in the original paper, please run the following commands step by step in your terminal
 
 <p align="center">
-<img align="middle" src="./pictures/Fig9.png" width="800"  />
+<img align="middle" src="./pictures/Fig9.png" width="400"  />
 </p>
 
 ```
