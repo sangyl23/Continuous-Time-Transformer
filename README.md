@@ -53,3 +53,22 @@ python eval_ODE.py --time_emb_kind HFTE --omega_0 50 --result_idx r7
 ```
 
 The results are saved to `.mat` files, and you can run `print_results_TabIV.m` to print results. 
+
+* For Table V in the original paper, please run the following commands step by step in your terminal
+
+<p align="center">
+<img align="middle" src="./pictures/TableIV.png" width="400"  />
+</p>
+
+```
+cd your_path/eval_code/TabIV_attention_omega0_encoding
+python eval_ODE.py --time_emb_kind HFTE --omega_0 30 --dec_ctsa False --result_idx r1
+python eval_ODE.py --time_emb_kind without --result_idx r2
+python eval_ODE.py --time_emb_kind PE --result_idx r3
+python eval_ODE.py --time_emb_kind HFTE --omega_0 1 --result_idx r4
+python eval_ODE.py --time_emb_kind HFTE --omega_0 10 --result_idx r5
+python eval_ODE.py --time_emb_kind HFTE --omega_0 30 --result_idx r6
+python eval_ODE.py --time_emb_kind HFTE --omega_0 50 --result_idx r7
+```
+
+The results are saved to `.mat` files, and you can run `print_results_TabIV.m` to print results. 
