@@ -1,0 +1,10 @@
+python eval_ODE.py --model_name Vanilla_GRU --input_mechanism Channel_mixing --result_idx r1
+python eval_ODE.py --model_name Vanilla_GRU --input_mechanism Channel_independent --result_idx r2
+python eval_ODE.py --model_name Vanilla_Transformer --input_mechanism Channel_mixing --result_idx r3
+python eval_ODE.py --model_name Vanilla_Transformer --input_mechanism Channel_independent --result_idx r4
+python eval_ODE.py --model_name Neural_ODE --input_mechanism Channel_mixing --result_idx r5
+python eval_ODE.py --model_name Neural_ODE --input_mechanism Channel_independent --result_idx r6
+python eval_ODE.py --model_name Latent_ODE --input_mechanism Channel_mixing --result_idx r7
+python eval_ODE.py --model_name Latent_ODE --input_mechanism Channel_independent --result_idx r8
+python eval_ODE.py --model_name CT_Transformer --input_mechanism Channel_mixing --result_idx r9
+python eval_ODE.py --model_name CT_Transformer --input_mechanism Channel_independent --result_idx r10
