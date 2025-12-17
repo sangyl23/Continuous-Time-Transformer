@@ -1,0 +1,5 @@
+python eval_ODE.py --model_name Neural_ODE --batch_size 2 --pre_len 200 --result_idx r1
+python eval_ODE.py --model_name Latent_ODE --batch_size 2 --pre_len 200 --result_idx r2
+python eval_ODE.py --model_name CT_Transformer --batch_size 2 --pre_len 200 --result_idx r3
+python eval_ODE.py --time_emb_kind without --batch_size 2 --pre_len 200 --result_idx r4
+python eval_ODE.py --time_emb_kind PE --batch_size 2 --pre_len 200 --result_idx r5
