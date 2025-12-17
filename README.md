@@ -168,3 +168,22 @@ python eval_ODE.py --model_name CT_Transformer --UE_velocity 80kmh --intepolate_
 ```
 
 The results are saved to `.mat` files, and you can run `print_results_Fig67.m` to print results. 
+
+* For Figure 8 in the original paper, please run the following commands step by step in your terminal
+
+<p align="center">
+<img align="middle" src="./pictures/TableVII.png" width="400"  />
+</p>
+
+```
+cd your_path/eval_code/TabVII_pilot_overhead
+python eval_ODE.py --intepolate_pilot_method uniform --intepolation_points_num 3 --result_idx r1
+python eval_ODE.py --intepolate_pilot_method uniform --intepolation_points_num 4 --result_idx r2
+python eval_ODE.py --intepolate_pilot_method uniform --intepolation_points_num 5 --result_idx r3
+python eval_ODE.py --intepolate_pilot_method random --intepolation_points_num 3 --result_idx r4
+python eval_ODE.py --intepolate_pilot_method random --intepolation_points_num 4 --result_idx r5
+python eval_ODE.py --intepolate_pilot_method random --intepolation_points_num 5 --result_idx r6
+python eval_ODE.py --intepolate_pilot_method chebyshev --intepolation_points_num 3 --result_idx r7
+```
+
+The results are saved to `.mat` files, and you can run `print_results_TabVII.m` to print results. 
