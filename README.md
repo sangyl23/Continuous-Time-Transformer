@@ -97,21 +97,20 @@ The results are saved to `.mat` files, and you can run `print_results_TabVI.m` t
 * For Table VII in the original paper, please run the following commands step by step in your terminal
 
 <p align="center">
-<img align="middle" src="./pictures/TableVI.png" width="400"  />
+<img align="middle" src="./pictures/TableVII.png" width="400"  />
 </p>
 
 ```
-cd your_path/eval_code/TabVI_vector_element
-python eval_ODE.py --model_name Vanilla_GRU --input_mechanism Channel_mixing --result_idx r1
-python eval_ODE.py --model_name Vanilla_GRU --input_mechanism Channel_independent --result_idx r2
-python eval_ODE.py --model_name Vanilla_Transformer --input_mechanism Channel_mixing --result_idx r3
-python eval_ODE.py --model_name Vanilla_Transformer --input_mechanism Channel_independent --result_idx r4
-python eval_ODE.py --model_name Neural_ODE --input_mechanism Channel_mixing --result_idx r5
-python eval_ODE.py --model_name Neural_ODE --input_mechanism Channel_independent --result_idx r6
-python eval_ODE.py --model_name Latent_ODE --input_mechanism Channel_mixing --result_idx r7
-python eval_ODE.py --model_name Latent_ODE --input_mechanism Channel_independent --result_idx r8
-python eval_ODE.py --model_name CT_Transformer --input_mechanism Channel_mixing --result_idx r9
-python eval_ODE.py --model_name CT_Transformer --input_mechanism Channel_independent --result_idx r10
+cd your_path/eval_code/TabVII_pilot_overhead
+python eval_ODE.py --intepolate_pilot_method uniform --intepolation_points_num 3 --result_idx r1
+python eval_ODE.py --intepolate_pilot_method uniform --intepolation_points_num 4 --result_idx r2
+python eval_ODE.py --intepolate_pilot_method uniform --intepolation_points_num 5 --result_idx r3
+python eval_ODE.py --intepolate_pilot_method uniform --intepolation_points_num 6 --result_idx r4
+python eval_ODE.py --intepolate_pilot_method random --intepolation_points_num 3 --result_idx r5
+python eval_ODE.py --intepolate_pilot_method random --intepolation_points_num 4 --result_idx r6
+python eval_ODE.py --intepolate_pilot_method random --intepolation_points_num 5 --result_idx r7
+python eval_ODE.py --intepolate_pilot_method random --intepolation_points_num 6 --result_idx r8
+python eval_ODE.py --intepolate_pilot_method chebyshev --intepolation_points_num 3 --result_idx r9
 ```
 
-The results are saved to `.mat` files, and you can run `print_results_TabVI.m` to print results. 
+The results are saved to `.mat` files, and you can run `print_results_TabVII.m` to print results. 
