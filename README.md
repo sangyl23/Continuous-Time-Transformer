@@ -124,14 +124,47 @@ The results are saved to `.mat` files, and you can run `print_results_TabVII.m` 
 </p>
 
 ```
-cd your_path/eval_code/TabVII_pilot_overhead
-python eval_ODE.py --intepolate_pilot_method uniform --intepolation_points_num 3 --result_idx r1
-python eval_ODE.py --intepolate_pilot_method uniform --intepolation_points_num 4 --result_idx r2
-python eval_ODE.py --intepolate_pilot_method uniform --intepolation_points_num 5 --result_idx r3
-python eval_ODE.py --intepolate_pilot_method random --intepolation_points_num 3 --result_idx r4
-python eval_ODE.py --intepolate_pilot_method random --intepolation_points_num 4 --result_idx r5
-python eval_ODE.py --intepolate_pilot_method random --intepolation_points_num 5 --result_idx r6
-python eval_ODE.py --intepolate_pilot_method chebyshev --intepolation_points_num 3 --result_idx r7
+cd your_path/eval_code/Fig67_pilot_pattern_deep_learning_model
+python eval_ODE.py --model_name Vanilla_GRU --UE_velocity 20kmh --intepolate_pilot_method uniform --result_idx r1
+python eval_ODE.py --model_name Vanilla_GRU --UE_velocity 40kmh --intepolate_pilot_method uniform --result_idx r2
+python eval_ODE.py --model_name Vanilla_GRU --UE_velocity 60kmh --intepolate_pilot_method uniform --result_idx r3
+python eval_ODE.py --model_name Vanilla_GRU --UE_velocity 80kmh --intepolate_pilot_method uniform --result_idx r4
+python eval_ODE.py --model_name Vanilla_GRU --UE_velocity 20kmh --intepolate_pilot_method chebyshev --result_idx r5
+python eval_ODE.py --model_name Vanilla_GRU --UE_velocity 40kmh --intepolate_pilot_method chebyshev --result_idx r6
+python eval_ODE.py --model_name Vanilla_GRU --UE_velocity 60kmh --intepolate_pilot_method chebyshev --result_idx r7
+python eval_ODE.py --model_name Vanilla_GRU --UE_velocity 80kmh --intepolate_pilot_method chebyshev --result_idx r8
+python eval_ODE.py --model_name Vanilla_Transformer --UE_velocity 20kmh --intepolate_pilot_method uniform --result_idx r9
+python eval_ODE.py --model_name Vanilla_Transformer --UE_velocity 40kmh --intepolate_pilot_method uniform --result_idx r10
+python eval_ODE.py --model_name Vanilla_Transformer --UE_velocity 60kmh --intepolate_pilot_method uniform --result_idx r11
+python eval_ODE.py --model_name Vanilla_Transformer --UE_velocity 80kmh --intepolate_pilot_method uniform --result_idx r12
+python eval_ODE.py --model_name Vanilla_Transformer --UE_velocity 20kmh --intepolate_pilot_method chebyshev --result_idx r13
+python eval_ODE.py --model_name Vanilla_Transformer --UE_velocity 40kmh --intepolate_pilot_method chebyshev --result_idx r14
+python eval_ODE.py --model_name Vanilla_Transformer --UE_velocity 60kmh --intepolate_pilot_method chebyshev --result_idx r15
+python eval_ODE.py --model_name Vanilla_Transformer --UE_velocity 80kmh --intepolate_pilot_method chebyshev --result_idx r16
+python eval_ODE.py --model_name Neural_ODE --UE_velocity 20kmh --intepolate_pilot_method uniform --result_idx r17
+python eval_ODE.py --model_name Neural_ODE --UE_velocity 40kmh --intepolate_pilot_method uniform --result_idx r18
+python eval_ODE.py --model_name Neural_ODE --UE_velocity 60kmh --intepolate_pilot_method uniform --result_idx r19
+python eval_ODE.py --model_name Neural_ODE --UE_velocity 80kmh --intepolate_pilot_method uniform --result_idx r20
+python eval_ODE.py --model_name Neural_ODE --UE_velocity 20kmh --intepolate_pilot_method chebyshev --result_idx r21
+python eval_ODE.py --model_name Neural_ODE --UE_velocity 40kmh --intepolate_pilot_method chebyshev --result_idx r22
+python eval_ODE.py --model_name Neural_ODE --UE_velocity 60kmh --intepolate_pilot_method chebyshev --result_idx r23
+python eval_ODE.py --model_name Neural_ODE --UE_velocity 80kmh --intepolate_pilot_method chebyshev --result_idx r24
+python eval_ODE.py --model_name Latent_ODE --UE_velocity 20kmh --intepolate_pilot_method uniform --result_idx r25
+python eval_ODE.py --model_name Latent_ODE --UE_velocity 40kmh --intepolate_pilot_method uniform --result_idx r26
+python eval_ODE.py --model_name Latent_ODE --UE_velocity 60kmh --intepolate_pilot_method uniform --result_idx r27
+python eval_ODE.py --model_name Latent_ODE --UE_velocity 80kmh --intepolate_pilot_method uniform --result_idx r28
+python eval_ODE.py --model_name Latent_ODE --UE_velocity 20kmh --intepolate_pilot_method chebyshev --result_idx r29
+python eval_ODE.py --model_name Latent_ODE --UE_velocity 40kmh --intepolate_pilot_method chebyshev --result_idx r30
+python eval_ODE.py --model_name Latent_ODE --UE_velocity 60kmh --intepolate_pilot_method chebyshev --result_idx r31
+python eval_ODE.py --model_name Latent_ODE --UE_velocity 80kmh --intepolate_pilot_method chebyshev --result_idx r32
+python eval_ODE.py --model_name CT_Transformer --UE_velocity 20kmh --intepolate_pilot_method uniform --result_idx r33
+python eval_ODE.py --model_name CT_Transformer --UE_velocity 40kmh --intepolate_pilot_method uniform --result_idx r34
+python eval_ODE.py --model_name CT_Transformer --UE_velocity 60kmh --intepolate_pilot_method uniform --result_idx r35
+python eval_ODE.py --model_name CT_Transformer --UE_velocity 80kmh --intepolate_pilot_method uniform --result_idx r36
+python eval_ODE.py --model_name CT_Transformer --UE_velocity 20kmh --intepolate_pilot_method chebyshev --result_idx r37
+python eval_ODE.py --model_name CT_Transformer --UE_velocity 40kmh --intepolate_pilot_method chebyshev --result_idx r38
+python eval_ODE.py --model_name CT_Transformer --UE_velocity 60kmh --intepolate_pilot_method chebyshev --result_idx r39
+python eval_ODE.py --model_name CT_Transformer --UE_velocity 80kmh --intepolate_pilot_method chebyshev --result_idx r40
 ```
 
 The results are saved to `.mat` files, and you can run `print_results_TabVII.m` to print results. 
