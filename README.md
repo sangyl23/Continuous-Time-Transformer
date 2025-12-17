@@ -33,4 +33,10 @@ In our code, we have provided detailed annotations. Below are the specific meani
  - `label_len` label length for transformer decoder.
 
 ## Reproduce the experimental result
-...
+In our experiments, in addition to the simulations described in the original letter, we also provide the simulations for different UE velocities, different SNRs of the beam received signals, different millimeter-wave scenarios, and different motion forms.
+
+* For the simulations described in the original letter, please run
+
+```
+python eval_MTL.py --experiment_type O1_trainingsamples
+```
