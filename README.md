@@ -35,7 +35,7 @@ In our code, we have provided detailed annotations. Below are the specific meani
 
 To get started, please download `demo_dataset` folders from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in `your_path`.
 
-**Please note: Because the training dataset is massive, a simplified demo is provided to demonstrate how the code runs and to support migration into your project.**
+**Please note: Since the training dataset is massive, and can not be fully uploaded to Cloud, a simplified demo is provided to demonstrate how the code runs and to support migration into your project.**
 
 * If you want to train continuous-time transformer, please run the following commands step by step in your terminal.
 
