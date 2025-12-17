@@ -42,6 +42,34 @@ cd your_path/train_code
 python eval_ODE.py --model_name CT_Transformer
 ```
 
+* If you want to train latent ode, please run the following commands step by step in your terminal.
+
+```
+cd your_path/train_code
+python eval_ODE.py --model_name Latent_ODE
+```
+
+* If you want to train neural ode, please run the following commands step by step in your terminal.
+
+```
+cd your_path/train_code
+python eval_ODE.py --model_name Neural_ODE
+```
+
+* If you want to train vanilla transformer, please run the following commands step by step in your terminal.
+
+```
+cd your_path/train_code
+python eval_ODE.py --model_name Vanilla_Transformer
+```
+
+* If you want to train gru, please run the following commands step by step in your terminal.
+
+```
+cd your_path/train_code
+python eval_ODE.py --model_name Vanilla_GRU
+```
+
 ## Reproduce the experimental result
 ***Note: In the following, let us use `your_path` to denote the directory where our project is located on your computer.***
 
