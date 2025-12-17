@@ -189,16 +189,31 @@ The results are saved to `.mat` files, and you can run `visualization_differenrm
 * For Figure 9 in the original paper, please run the following commands step by step in your terminal
 
 <p align="center">
-<img align="middle" src="./pictures/Fig8.png" width="800"  />
+<img align="middle" src="./pictures/Fig9.png" width="800"  />
 </p>
 
 ```
-cd your_path/eval_code/Fig8_visualization
-python eval_ODE.py --model_name Neural_ODE --batch_size 2 --pre_len 200 --result_idx r1
-python eval_ODE.py --model_name Latent_ODE --batch_size 2 --pre_len 200 --result_idx r2
-python eval_ODE.py --model_name CT_Transformer --batch_size 2 --pre_len 200 --result_idx r3
-python eval_ODE.py --time_emb_kind without --batch_size 2 --pre_len 200 --result_idx r4
-python eval_ODE.py --time_emb_kind PE --batch_size 2 --pre_len 200 --result_idx r5
+cd your_path/eval_code/Fig9_deepmimo_snr
+python eval_ODE.py --model_name Vanilla_GRU --snr 0dB --result_idx r1
+python eval_ODE.py --model_name Vanilla_Transformer --snr 0dB --result_idx r2
+python eval_ODE.py --model_name Neural_ODE --snr 0dB --result_idx r3
+python eval_ODE.py --model_name Latent_ODE --snr 0dB --result_idx r4
+python eval_ODE.py --model_name CT_Transformer --snr 0dB --result_idx r5
+python eval_ODE.py --model_name Vanilla_GRU --snr 5dB --result_idx r1
+python eval_ODE.py --model_name Vanilla_Transformer --snr 5dB --result_idx r2
+python eval_ODE.py --model_name Neural_ODE --snr 5dB --result_idx r3
+python eval_ODE.py --model_name Latent_ODE --snr 5dB --result_idx r4
+python eval_ODE.py --model_name CT_Transformer --snr 5dB --result_idx r5
+python eval_ODE.py --model_name Vanilla_GRU --snr 10dB --result_idx r1
+python eval_ODE.py --model_name Vanilla_Transformer --snr 10dB --result_idx r2
+python eval_ODE.py --model_name Neural_ODE --snr 10dB --result_idx r3
+python eval_ODE.py --model_name Latent_ODE --snr 10dB --result_idx r4
+python eval_ODE.py --model_name CT_Transformer --snr 10dB --result_idx r5
+python eval_ODE.py --model_name Vanilla_GRU --snr 15dB --result_idx r1
+python eval_ODE.py --model_name Vanilla_Transformer --snr 15dB --result_idx r2
+python eval_ODE.py --model_name Neural_ODE --snr 15dB --result_idx r3
+python eval_ODE.py --model_name Latent_ODE --snr 15dB --result_idx r4
+python eval_ODE.py --model_name CT_Transformer --snr 15dB --result_idx r5
 ```
 
-The results are saved to `.mat` files, and you can run `visualization_differenrmodels.m` to print results. 
+The results are saved to `.mat` files, and you can run `print_results_Fig9.m` to print results. 
