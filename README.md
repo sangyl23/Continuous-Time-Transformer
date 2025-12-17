@@ -5,7 +5,7 @@ The pytorch implementation of our paper “Continuous-Time Transformer Based Cha
 Please download checkpoint (.pth format) and test data set (.mat format) from Tsinghua Cloud: https://cloud.tsinghua.edu.cn/d/b369c2aab6b445e7a067/. Then, extract them in the corresponding `./checkpoint`, `./3GPP_dataset`, and `deepmimo_dataset` folders.  
 
 ## File Description
- - `./DeepMIMO_O1_28_matlab` containing matlab code for generating Outdoor 1 dataset.
+ - `./3GPP_dataset` containing test dataset for 3GPP TR 38.901 channels.
  - `./DeepMIMO_O1_28B_matlab` containing matlab code for generating Outdoor 1 Blockage dataset.
  - `./eval_dataset` test data set folder.
  - `./trained_model` trained model folder.
