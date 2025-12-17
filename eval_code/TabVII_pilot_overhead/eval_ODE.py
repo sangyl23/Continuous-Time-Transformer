@@ -627,22 +627,16 @@ def main(training_time = args.training_time, epoch_num = args.epoch_num, b = arg
     elif args.result_idx == 'r3':
         model_path = '../../checkpoint/3GPP_60kmh/uniform_pilot/CT_transformer_hybrid_pilot_overhead43/inregular_pilot(v60kmh,snr10dB,lr0.0005)_3GPP_38901_CT_Transformer_NMSE_tt0_MODEL.pth'
         mat_name = 'Eval_uniform_pilot_overhead43.mat'
-    elif args.result_idx == 'r4':
-        model_path = '../../checkpoint/3GPP_60kmh/uniform_pilot/CT_transformer_hybrid_pilot_overhead50/inregular_pilot(v60kmh,snr10dB,lr0.0005)_3GPP_38901_CT_Transformer_NMSE_tt0_MODEL.pth'
-        mat_name = 'Eval_uniform_pilot_overhead50.mat'
-    elif args.result_idx == 'r5':         
+    elif args.result_idx == 'r4':         
         model_path = '../../checkpoint/3GPP_60kmh/random_pilot/CT_transformer_hybrid_pilot_overhead29/inregular_pilot(v60kmh,snr10dB,lr0.0005)_3GPP_38901_CT_Transformer_NMSE_tt0_MODEL.pth'
         mat_name = 'Eval_random_pilot_overhead29.mat'
-    elif args.result_idx == 'r6': 
+    elif args.result_idx == 'r5': 
         model_path = '../../checkpoint/3GPP_60kmh/random_pilot/CT_transformer_hybrid_pilot_overhead36/inregular_pilot(v60kmh,snr10dB,lr0.0005)_3GPP_38901_CT_Transformer_NMSE_tt0_MODEL.pth'
         mat_name = 'Eval_random_pilot_overhead36.mat'
-    elif args.result_idx == 'r7':
+    elif args.result_idx == 'r6':
         model_path = '../../checkpoint/3GPP_60kmh/random_pilot/CT_transformer_hybrid_pilot_overhead43/inregular_pilot(v60kmh,snr10dB,lr0.0005)_3GPP_38901_CT_Transformer_NMSE_tt0_MODEL.pth'
         mat_name = 'Eval_random_pilot_overhead43.mat'
-    elif args.result_idx == 'r8':
-        model_path = '../../checkpoint/3GPP_60kmh/random_pilot/CT_transformer_hybrid_pilot_overhead50/inregular_pilot(v60kmh,snr10dB,lr0.0005)_3GPP_38901_CT_Transformer_NMSE_tt0_MODEL.pth'
-        mat_name = 'Eval_random_pilot_overhead50.mat'
-    elif args.result_idx == 'r9':
+    elif args.result_idx == 'r7':
         model_path = '../../checkpoint/3GPP_60kmh/chebyshev_pilot/CT_transformer_hybrid/inregular_pilot(v60kmh,snr10dB,lr0.0005)_3GPP_38901_CT_Transformer_NMSE_tt0_MODEL.pth'
         mat_name = 'Eval_chebyshev_pilot_overhead29.mat'
     else:
