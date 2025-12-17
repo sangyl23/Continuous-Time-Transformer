@@ -627,12 +627,6 @@ def main(training_time = args.training_time, epoch_num = args.epoch_num, b = arg
     elif args.result_idx == 'r3':         
         model_path = '../../checkpoint/3GPP_60kmh/chebyshev_pilot/CT_transformer_hybrid/inregular_pilot(v60kmh,snr10dB,lr0.0005)_3GPP_38901_CT_Transformer_NMSE_tt0_MODEL.pth'
         mat_name = 'Eval_CT_transformer_hybrid.mat'
-    elif args.result_idx == 'r4':         
-        model_path = '../../checkpoint/3GPP_60kmh/chebyshev_pilot/CT_transformer_hybrid_without_te/inregular_pilot(v60kmh,snr10dB,lr0.0005)_3GPP_38901_CT_Transformer_NMSE_tt0_MODEL.pth'
-        mat_name = 'Eval_without_te.mat'
-    elif args.result_idx == 'r5': 
-        model_path = '../../checkpoint/3GPP_60kmh/chebyshev_pilot/CT_transformer_hybrid_with_pe/inregular_pilot(v60kmh,snr10dB,lr0.0005)_3GPP_38901_CT_Transformer_NMSE_tt0_MODEL.pth'
-        mat_name = 'Eval_with_pe.mat'
     else:
         ValueError(f"Unknown result idx: {args.result_idx}")    
     
