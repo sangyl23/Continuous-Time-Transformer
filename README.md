@@ -57,7 +57,7 @@ The results are saved to `.mat` files, and you can run `print_results_TabIV.m` t
 * For Table V in the original paper, please run the following commands step by step in your terminal
 
 <p align="center">
-<img align="middle" src="./pictures/TableIV.png" width="400"  />
+<img align="middle" src="./pictures/TableV.png" width="400"  />
 </p>
 
 ```
